@@ -1,5 +1,7 @@
 # Rust build output
 /target
+Cargo.lock
+
 
 # SQLite database file
 *.sqlite3
@@ -11,3 +13,4 @@
 
 # Diesel lock (auto-generated, don't commit)
 .diesel_lock
+
