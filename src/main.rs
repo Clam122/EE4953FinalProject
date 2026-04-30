@@ -4,7 +4,7 @@ mod schema;
 mod routes;
 
 use axum::{
-    routing::{delete, get, post, put},
+    routing::get,
     Router,
 };
 use routes::users::*;
@@ -12,6 +12,7 @@ use std::sync::{Arc, Mutex};
 
 #[tokio::main]
 async fn main() {
+    tracing_subscriber::fmt::init();
     let conn = db::establish_connection();
     let state: AppState = Arc::new(Mutex::new(conn));
 
