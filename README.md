@@ -18,7 +18,7 @@ sudo apt install libsqlite3-dev
 cargo install diesel_cli --no-default-features --features sqlite
 
 # Clone the repo
-git clone <repo>
+git clone https://github.com/Clam122/EE4953FinalProject
 cd keyserver
 
 # Create the environment file
