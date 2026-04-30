@@ -1,0 +1,13 @@
+# Rust build output
+/target
+
+# SQLite database file
+*.sqlite3
+*.sqlite
+*.db
+
+# Environment variables (contains secrets)
+.env
+
+# Diesel lock (auto-generated, don't commit)
+.diesel_lock
