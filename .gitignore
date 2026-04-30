@@ -13,4 +13,3 @@ Cargo.lock
 
 # Diesel lock (auto-generated, don't commit)
 .diesel_lock
-
