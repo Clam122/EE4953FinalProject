@@ -1,0 +1,12 @@
+services:
+  keyserver:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      DATABASE_URL: /app/data/db.sqlite3
+    volumes:
+      - keyserver_data:/app/data
+
+volumes:
+  keyserver_data:
